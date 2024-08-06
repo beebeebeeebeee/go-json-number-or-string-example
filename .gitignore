@@ -1,0 +1,26 @@
+# Binaries for programs and plugins
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Output of the go coverage tool
+*.out
+
+# Go workspace file
+go.work
+
+# Go modules
+vendor/
+
+# IDE specific files
+.idea/
+.vscode/
+*.iml
+
+# Logs
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
