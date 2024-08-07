@@ -1,7 +1,7 @@
 package main
 
 import (
-	"json-number/internal/app"
+	"go-json-number-or-string-example/internal/app"
 	"log"
 )
 
