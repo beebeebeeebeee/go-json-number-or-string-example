@@ -27,6 +27,7 @@ func (a *App) DecodeData(data []byte) []Data {
 		ds = append(ds, Data{
 			Val: val,
 			Str: v.Str.String(),
+			Bol: v.Bol.Boolean(),
 		})
 	}
 
