@@ -1,15 +1,15 @@
 package app
 
-import "encoding/json"
-
 type DataRaw struct {
-	Val json.Number `json:"val"`
-	Str JsonString  `json:"str"`
-	Bol JsonBoolean `json:"bol"`
+	ValF64 JsonFloat64 `json:"valF64"`
+	ValI64 JsonInt64   `json:"valI64"`
+	Str    JsonString  `json:"str"`
+	Bol    JsonBoolean `json:"bol"`
 }
 
 type Data struct {
-	Val float64 `json:"val"`
-	Str string  `json:"str"`
-	Bol bool    `json:"bol"`
+	ValF64 float64 `json:"valF64"`
+	ValI64 int64   `json:"valI64"`
+	Str    string  `json:"str"`
+	Bol    bool    `json:"bol"`
 }
