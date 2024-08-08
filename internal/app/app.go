@@ -20,12 +20,7 @@ func (a *App) DecodeData(data []byte) ([]Data, error) {
 
 	var ds []Data
 	for _, v := range dr {
-		ds = append(ds, Data{
-			ValF64: v.ValF64.Float64(),
-			ValI64: v.ValI64.Int64(),
-			Str:    v.Str.String(),
-			Bol:    v.Bol.Boolean(),
-		})
+		ds = append(ds, v.Data())
 	}
 
 	return ds, nil
